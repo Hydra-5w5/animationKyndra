@@ -1,0 +1,35 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffebeb;
+  background: rgba(240, 248, 255, 0.9);
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 30%;
+  cursor: pointer;
+  transition: linear 0.5s, transform 0.2s;
+  background-repeat: no-repeat;
+  background-size: contain; /* Updated property to ensure the entire image fits */
+}
+
+.bubble:hover {
+  transform: scale(1.7);
+  opacity: 100%;
+}
+
+.bubble--popped {
+  transform: scale(2);
+  opacity: 0;
+  pointer-events: none;
+}

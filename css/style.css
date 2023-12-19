@@ -1,17 +1,3 @@
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #ffebeb;
-  background: rgba(240, 248, 255, 0.9);
-  overflow: hidden;
-}
-
 .bubble {
   position: absolute;
   top: 0;
